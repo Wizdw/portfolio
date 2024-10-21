@@ -11,17 +11,39 @@
     font-style: normal;
 }
 body{
-    background-color: rgb(255, 253, 253);
+    background-color: white;
+    background-image: url(/assets/images/mybackground.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar {
+    padding: 1rem;
+    background-color: cyan;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #000;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    color: black;
+}
 .mybasecolortext{
     color: var(--clr-myassent);
+    /* background-color: black; */
+    /* text-shadow: 0 0 1px black; */
+    font-weight: bold;
 }
 .myshadow{
     box-shadow: 0px 5px 5px rgb(217, 217, 217), 0px -5px 5px white;
 }
 .myiconsize{
-    font-size: 50px;
+    font-size: 5vw;
 }
 li{
     list-style: none;
@@ -61,39 +83,48 @@ nav li{
 }
 .logosection{
     background-image: url(assets/images/tilhmee.png);
-    width: 50vw;
-    height: 50vh;
+    width: 30vw;
+    height: 30vh;
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
 }
+.mylogoicon{
+    background-image: url(assets/images/tilhmee.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    border-radius: 50%;
+}
 /* hero section  */
 .hero{
-    background-image:url(assets/images/myphoto.jpg);
+    background-image:url(assets/images/caricature\ \(2\).png);
     height: 500px;
     width: 500px;
     background-size: cover;
     background-position: center;
 }
 .myh1{
-    font-size: 90px;
+    font-size: 3vw;
     color: black;
 }
 .mycolorbutton{
     background: var(--clr-myassent);
-    padding: 10x;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    /* padding: 10x; */
+    border-radius: 25%;
+    height: 40px;
+    width: 40px;
     color: black;
     align-items: center;
     transition: 0.3s ease-in-out;
-    font-size: 50px;
+    font-size: 30px;
     position:absolute;
     box-sizing: border-box;
     z-index: 1;
 }
-.mybuttonglow{
+.mybuttonglow:hover{
     box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.526);
 }
 .mycolorbutton:hover{
@@ -131,7 +162,47 @@ nav li{
     background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.435));
 
 }
+.myinvertedcolor{
+    filter: invert(1);
+}
 .myinput{
     border: none;
     border-bottom: black solid 1px;
+}
+.parallax{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 20px;
+    /* width: 50vw; */
+
+}
+.parallax-con{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-item{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.parallax-text{
+    font-size: 20px;
+    position: absolute;
+    width: 50%;
+}
+.mycyanbg{
+    background-color: cyan;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+.bigger{
+    font-size: 12vw;
 }
