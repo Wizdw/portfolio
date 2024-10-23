@@ -1,8 +1,5 @@
 :root{
-    --clr-basecolor:black; 
-    --clr-myassent: cyan;
-    --clr-myassenttransparent:rgba(0, 255, 255, 0.638);
-    /* rgb(196, 73, 73) */
+    --clr-mybasecolor: cyan;
 }
 *{
     font-family: "Playfair Display", serif;
@@ -10,199 +7,125 @@
     font-weight: 400px;
     font-style: normal;
 }
-body{
-    background-color: white;
-    background-image: url(/assets/images/mybackground.png);
-    background-size: cover;
-    background-attachment: fixed;
-}
-.navbar {
-    padding: 1rem;
-    background-color: cyan;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler-icon {
-    color: #000;
-}
-
-.navbar-nav .nav-link {
-    padding: 0.5rem 1rem;
-    color: black;
-}
-.mybasecolortext{
-    color: var(--clr-myassent);
-    /* background-color: black; */
-    /* text-shadow: 0 0 1px black; */
-    font-weight: bold;
-}
-.myshadow{
-    box-shadow: 0px 5px 5px rgb(217, 217, 217), 0px -5px 5px white;
-}
-.myiconsize{
-    font-size: 5vw;
+.myh1{
+    font-size: 4vw;
 }
 li{
     list-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a{
-    color: var(--clr-basecolor);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     font-weight: lighter;
-
-}
-a:hover{
     text-decoration: none;
     color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.mylogoicon{
+    background-image: url(/assets/images/tilhmee.png);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.myshadow{
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.246);
 }
 .linehover{
     position: relative;
 }
-nav li{
-    margin-left: 20px;
-}
 .linehover::after{
-    content: "";
+    content:"";
+    background-color: black;
+    height: 1px;
     width: 0%;
-    background-color: var(--clr-basecolor);
-    height: 2px;
+    transition: 0.2s ease-in;
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    transition: 0.2s linear;
-    overflow:hidden;
-    transition-delay: 0.2s;
-    /* z-index: -1; */
 }
 .linehover:hover::after{
     width: 100%;
-}
-.logosection{
-    background-image: url(assets/images/tilhmee.png);
-    width: 30vw;
-    height: 30vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-}
-.mylogoicon{
-    background-image: url(assets/images/tilhmee.png);
-    width: 100px;
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    border-radius: 50%;
-}
-/* hero section  */
-.hero{
-    background-image:url(assets/images/caricature\ \(2\).png);
-    height: 500px;
-    width: 500px;
-    background-size: cover;
-    background-position: center;
-}
-.myh1{
-    font-size: 3vw;
-    color: black;
-}
-.mycolorbutton{
-    background: var(--clr-myassent);
-    /* padding: 10x; */
-    border-radius: 25%;
-    height: 40px;
-    width: 40px;
-    color: black;
-    align-items: center;
-    transition: 0.3s ease-in-out;
-    font-size: 30px;
-    position:absolute;
-    box-sizing: border-box;
-    z-index: 1;
-}
-.mybuttonglow:hover{
-    box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.526);
-}
-.mycolorbutton:hover{
-    color: white;
-    background-color: black;
-    transition: 0.5s;
-}
-.mywebpath{
-    background-image: url(assets/images/web.jpg);
-    height: 400px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-}
-.myartpath{
-    background-image: url(assets/images/art.jpg);
-    height: 400px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-}
-.mypichover{
-    position: relative;
-}
-.mypichover::after{
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
 
-}
-.mypichover:hover::after{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.435));
-
-}
-.myinvertedcolor{
-    filter: invert(1);
-}
-.myinput{
-    border: none;
-    border-bottom: black solid 1px;
 }
 .parallax{
     height: 100vh;
-    overflow-y: auto;
+    width: 100vw;
     overflow-x: hidden;
-    perspective: 20px;
-    /* width: 50vw; */
-
+    perspective: 5px;
+}
+.parallax::-webkit-scrollbar{
+    display: none;
 }
 .parallax-con{
-    position: relative;
+    transform-style: preserve-3d;
     height: 100%;
     width: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    position: relative;
+    padding: 100px;
 }
-.parallax-item{
+.parallax-image{
+    position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
-    position: absolute;
+    top: 0px;
+    left: 0px;
 }
-.parallax-text{
-    font-size: 20px;
-    position: absolute;
-    width: 50%;
+
+.logosection{
+    background-image: url(/assets/images/tilhmeetransparent.png);
+    height: 20vh;
+    width: 20vw;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
 }
-.mycyanbg{
-    background-color: cyan;
+.myiconsize{
+    font-size: 10vh;
     color: black;
-    display: block;
+    transition: 0.2s ease-in;
+}
+.myiconsize:hover{
+    color: cyan;
+}
+footer{
+    background-color: black;
+    
+}
+.mylogosm{
+    background-image: url(/assets/images/tilhmee.png);
+    background-position: center;
+    background-size: cover;
+    height: 2vh;
+    width: 2vh;
+}
+footer *{
+    color: white;
     padding: 10px;
 }
-.bigger{
-    font-size: 12vw;
+.myiconsizesm{
+    font-size: 5vh;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.myiconsizesm:hover{
+    color: cyan;
+}
+.cyanbg{
+    background-color: cyan;
+    color: black;
+    padding: 20px;
+    width: 100vw;
+
+}
+.stretch{
+    letter-spacing: 1px;
+    transition: 0.3s ease-out;
+}
+.stretch:hover{
+    letter-spacing: 10px;
 }
