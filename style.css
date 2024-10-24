@@ -12,12 +12,16 @@
 }
 li{
     list-style: none;
+    text-transform: capitalize;
+
 }
 a{
     font-family: sans-serif;
     font-weight: lighter;
     text-decoration: none;
     color: black;
+    text-transform: capitalize;
+
 }
 a:hover{
     color: black;
@@ -85,7 +89,7 @@ a:hover{
     background-position: center;
 }
 .myiconsize{
-    font-size: 10vh;
+    font-size: 40px;
     color: black;
     transition: 0.2s ease-in;
 }
@@ -108,7 +112,7 @@ footer *{
     padding: 10px;
 }
 .myiconsizesm{
-    font-size: 5vh;
+    font-size: 30px;
     color: white;
     transition: 0.2s ease-in;
 }
@@ -119,7 +123,14 @@ footer *{
     background-color: cyan;
     color: black;
     padding: 20px;
-    width: 100vw;
+
+}
+.cyanbg a{
+    font-size: 20px;
+    transition: 0.3s ease-in;
+}
+.cyanbg a:hover{
+    text-decoration: underline;
 
 }
 .stretch{
@@ -127,5 +138,18 @@ footer *{
     transition: 0.3s ease-out;
 }
 .stretch:hover{
-    letter-spacing: 10px;
+    letter-spacing: 2px;
+}
+.hidden-path{
+    display: none;
+}
+.pitch-black{
+    background-color: white;
+    border: black solid 1px;
+    padding: 40px 30px;
+    transition:all 0.2s ease-in-out;
+}
+.pitch-black:hover{
+    background-color: black;
+    color:white;
 }
