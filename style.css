@@ -1,0 +1,157 @@
+:root{
+    --clr-mybasecolor: cyan;
+}
+*{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+.myh1{
+    font-size: 4vw;
+}
+li{
+    list-style: none;
+    text-transform: capitalize;
+
+}
+a{
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.mylogoicon{
+    background-image: url(./assets/images/tilhmee.png);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.myshadow{
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.246);
+}
+.linehover{
+    position: relative;
+}
+.linehover::after{
+    content:"";
+    background-color: black;
+    height: 1px;
+    width: 0%;
+    transition: 0.2s ease-in;
+    position: absolute;
+    bottom: 0px;
+}
+.linehover:hover::after{
+    width: 100%;
+
+}
+.parallax-image{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.logosection{
+    background-image: url(./assets/images/tilhmee.png);
+    height: 20vh;
+    width: 20vw;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.myiconsize{
+    font-size: 40px;
+    color: black;
+    transition: 0.2s ease-in;
+}
+.myiconsize:hover{
+    color: cyan;
+}
+footer{
+    background-color: black;
+    
+}
+.mylogosm{
+    background-image: url(./assets/images/tilhmee.png);
+    background-position: center;
+    background-size: cover;
+    height: 2vh;
+    width: 2vh;
+}
+footer *{
+    color: white;
+    padding: 10px;
+}
+.myiconsizesm{
+    font-size: 30px;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.myiconsizesm:hover{
+    color: cyan;
+}
+.cyanbg{
+    background-color: cyan;
+    color: black;
+    padding: 20px;
+
+}
+.hero{
+    position: relative;
+}
+/* .hero::after{
+    content:"";
+    position: absolute;
+    background-image:url(./assets/images/bgbordr.png);
+    height: 500px;
+    top: 0;
+    left: 0;
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+
+}
+.hero:hover::after{
+    box-shadow:0px 0px 10px 10px white ;
+} */
+.cyanbg a{
+    font-size: 20px;
+    transition: 0.3s ease-in;
+}
+.cyanbg a:hover{
+    text-decoration: underline;
+
+}
+.stretch{
+    letter-spacing: 1px;
+    transition: 0.3s ease-out;
+}
+.stretch:hover{
+    letter-spacing: 2px;
+}
+.hidden-path{
+    display: none;
+}
+.pitch-black{
+    background-color: white;
+    border: black solid 1px;
+    padding: 40px 30px;
+    transition:all 0.2s ease-in-out;
+}
+.pitch-black:hover{
+    background-color: black;
+    color:white;
+}
+/* ////////////// */
