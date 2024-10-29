@@ -31,7 +31,7 @@ a:hover{
     background-image: url(./assets/images/tilhmee.png);
     height: 80px;
     width: 80px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-position: center;
     background-size: cover;
 }
@@ -135,11 +135,10 @@ footer *{
 
 }
 .stretch{
-    letter-spacing: 1px;
     transition: 0.3s ease-out;
 }
 .stretch:hover{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .hidden-path{
     display: none;
@@ -154,4 +153,16 @@ footer *{
     background-color: black;
     color:white;
 }
-/* ////////////// */
+.wordart{
+    background-image: url(./assets/images/blurredgirl.png);
+    background-position: center;
+    background-size: cover;
+    /* font-size: 80px; */
+    background-clip: text;
+    color: transparent;
+}
+.column1{
+    /* position: static; */
+    height: 100px;
+    width: 50%;
+}
